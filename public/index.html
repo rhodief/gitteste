@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Jquery</title>
+</head>
+<body>
+	<h1>Alura Typer</h1>
+    <p class="frase">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+    <ul class="informacoes">
+        <li>19 palavras</li>
+        <li>15 segundos</li>
+    </ul>
+
+	<input type="button" value="-" id="menos">
+	<div id="contador">0</div>
+	<input type="button" value="+" id="mais">
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/main.js"></script>
+
+<script>
+	contador = $('#contador').text();
+	$('#mais').click(function(){
+		contador++;
+		$('#contador').text(contador);
+	});
+	$('#menos').click(function(){
+		contador--;
+		$('#contador').text(contador);
+	});
+</script>
+
+</body>
+</html>
